@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>结构伪类选择器</title>
+	<!-- 结构(位置)伪类选择器CSS3 :first-child:选取属于其父元素的首个子元素的指定选择器; :lastchild 选择属于其父元素的最后一个子元素的指定选择器; :nth-child(n) 匹配属于其父元素的第N个子元素,不论元素的类型even偶数 odd奇数 n从0开始;nth-last-child(n) 选择器匹配属于其元素的第N个子元素的每个元素,不论元素的类型,从最后一个子元素开始计数.n可以是数字,关键词或公式-->
+	<style type="text/css">
+		li:fist-child{
+			color: red;
+		}
+		li:last-child{
+			color:blue;
+		}
+		li:nth-child(4){
+			color: pink;
+		}
+		/*li:nth-child(even){
+			color: pink;
+		}
+		li:nth-child(2n){
+
+		}*/
+	</style>
+</head>
+<body>
+	<ul>
+		<li>第一个</li>
+		<li>第二个</li>
+		<li>第三个</li>
+		<li>第四个</li>
+		<li>第五个</li>
+		<li>第六个</li>
+	</ul>
+</body>
+</html>

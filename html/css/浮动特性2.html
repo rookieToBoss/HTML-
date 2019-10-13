@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动特性2</title>
+	<style>
+		/*浮动元素的排列位置跟上一个元素(块级)有关系.如果上一个元素有浮动,则A元素会和上一个元素的顶部对齐;如果上一个元素是标准流,则A元素的顶部会和上一个元素的底部对齐*/
+		/*一个父盒子里面的子盒子,如果其中一个子级有浮动则其他子级都需要浮动.这样才能一行对齐显示.
+		元素添加浮动后,元素会具有行内块元素的特性.元素的大小完全取决于定义的大小或者默认的内容多少.
+		浮动根据元素书写的位置来显示相应的浮动*/
+		section {
+			width: 800px;
+			height: 600px;
+			background-color: pink;	
+		}
+		section div:first-child {
+			width: 200px;
+			height: 200px;
+			background-color: purple;
+			float: left;
+		}
+		section div:last-child {
+			width: 250px;
+			height: 400px;
+			background-color: skyblue;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div>上一个盒子</div>
+		<div>A</div>
+	</section>
+</body>
+</html>

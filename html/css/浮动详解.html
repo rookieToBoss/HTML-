@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动详解</title>
+	<style>
+		div:first-child {
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			float: left;
+		}
+		div:last-child {
+			height: 300px;
+			width: 140px;
+			background-color: red;
+		}
+		/*浮动脱离标准流,不占位置,会影响标准流.浮动只有左右浮动;浮动首先创建包含块的概念(包裹).就是说,浮动的元素总是找离它最近的父级元素对齐.但是不会超出内边距的范围*/
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<!-- 如果两个盒子都不加浮动,就是标准流,块级元素自上而下显示 -->
+</body>
+</html>

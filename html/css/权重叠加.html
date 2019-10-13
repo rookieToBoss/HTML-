@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>权重叠加</title>
+	<!-- 权重时可以叠加的,如:div ul li:0 0 0 3;.nav ul li:0 0 1 2
+	继承的权重为0 -->
+	<style>
+		li {
+			color: red; /*0 0 0 1*/
+		}
+		ul li {
+			color: green; /*0 0 0 1; 0 0 0 1 叠加0 0 0 2*/
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li>你爸爸</li>
+			<li>你妈妈</li>
+			<li>你爷爷</li>
+		</ul>
+	</nav>
+</body>
+</html>

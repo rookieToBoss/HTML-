@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪元素选择器</title>
+	<style>
+		/*伪元素选择器:E:first-letter文本的第一个单词或字;E::first-line:文本第一行;E:selection:可改变选中文本的样式;E::before和E:after  在E元素内部的开始位置和结束位置创建一个元素,该元素为行内元素,并且需要结合content属性使用;E:after,E:before在旧版本里是伪元素,CSS3的规范里":"用来表示伪类,"::"用来表示伪元素,但是在高版本浏览器下E:after,E:before会被自动识别为E::before和E:after,这样做的目的是用来做兼容.*/
+		p::first-letter{
+			color: red;
+			font-size: 50px;
+		}
+		div::before{
+			content: "laozi";
+		}
+		div::after{
+			content: "!!!";
+		}
+	</style>
+</head>
+<body>
+	<h1>freestyle</h1>
+	<p>一个很容易想到的理由是“联手抗敌”“三英战吕布”，毕竟在国内市场，华为的增长一枝独秀，而小米、OPPO、vivo 三家都或多或少地在下跌。我们一直说，others 如今没有多少量了，四家一线厂商就是在互相抢食，有一家多卖点，另外一家势必会少卖点。而如今的情况，是华为一个人抢三个的食。</p>
+	<div>
+		我是你爹
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>类选择器和id选择器</title>
+	<style type="text/css">
+		.red{
+			color:red;
+		}
+		#pink{
+			color: pink;
+		}
+		a:link{
+			font-size: 14px;
+			color: gray;
+			font-weight: 700;
+		}
+		a:visited{
+			font-size: 14px;
+			color: red;
+			font-weight: 700;
+		}
+		a:hover{
+			font-size: 14px;
+			color: yellow;
+			font-weight: 700;
+		}
+		a:active{
+			font-size: 14px;
+			color: green;
+			font-weight: 700;
+		}
+	</style>
+	<!-- 类选择器是可以重复多次使用的,类似于人名
+		id类似身份证号是唯一的,只允许使用一次;
+		类选择器和id选择器的区别就是在使用次数上
+		通配符选择器用"*"表示,他是所有选择器中作用范围最广的,能匹配页面中所有的元素;*{属性:属性值}
+		伪类选择器:首先这也是一个选择器,伪类选择器用于向某些选择器添加特殊的效果,比如给链接添加特殊效果,比如可以选择第一个,第n个元素.用冒号":"比如:link{};链接伪类选择器 :link未访问的链接; :visited 已访问的链接; :hover 鼠标移动到链接上; :active 选定的链接;注意写的时候尽量不要颠倒顺序
+	 -->
+</head>
+<body>
+	<div class="red">djfkdjf</div>
+	<div id="pink">dfgkjg</div>
+	<div class="red">dfjkjtg</div>
+	<a href="http:www.baidu.com">baidu</a>
+</body>
+</html>

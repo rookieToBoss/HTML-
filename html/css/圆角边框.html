@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>圆角边框</title>
+	<style>
+		div {
+			width: 200px;
+			height: 200px;
+			border: 1px solid red;
+		}
+		div:first-child{
+			border-radius: 10px;/*一个数值表示4个角都是相同的,也可以用百分比表示*/
+		}
+		div:nth-child(2){
+			border-radius :10px 20px;/*左上角和右下角10px 右上角和左下角20px*/ 
+		}
+		div:nth-child(3){
+			border-radius: 10px 20px 30px;
+		}
+		div:nth-child(4) {
+			border-radius: 20px 30px 40px 50px;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

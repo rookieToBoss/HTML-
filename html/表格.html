@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格</title>
+</head>
+<body>
+	<table width="500" height="300" border="1" cellspacing="0" cellpadding="15" align="center">
+		<caption>表格标题</caption>
+		<thead>
+			<tr>
+				<th>one</th>
+				<th>two</th>
+				<th>three</th>
+			</tr>
+		</thead>
+			<!-- td标签里可以放其他标签,table和tr里不能放其他标签 
+				使用表格进行布局时,可以将表格划分为头部,主体和页脚;
+				<thead>用于定义表格的头部;必须位于<table>标签中,一般包含网页的logo和导航信息头部;<tbody>用于定义表格的主体.位于<table>标签中,一般包含网页中除头部和底部之外的其它内容.
+			-->
+		<tbody>
+			<tr>
+				<td bgcolor="red">row1</td>
+				<td>row2</td>
+				<td>row3</td>
+			</tr>
+			<tr>
+				<td>row1_1</td>
+				<td>row2_1</td>
+				<td>row3_1</td>
+			</tr>
+			<tr>
+				<td>row1_2</td>
+				<td>row2_2</td>
+				<td>row3_2</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<table width="500" height="300" border="1" cellspacing="0" cellpadding="15" align="center">
+		<caption>合并单元格</caption>
+		<!-- 合并单元格的思想:将多个内容合并的时候,就会有多余的东西,把它删除.例如把三个td合并成一个,那就多了2格,需要删除.公式:删除的个数 = 合并的个数-1 -->
+		<thead>
+			<tr>
+				<th>one</th>
+				<th>two</th>
+				<th>three</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>row1</td>
+				<td>row2</td>
+				<td rowspan="3">row3</td>
+			</tr>
+			<tr>
+				<td>row1_1</td>
+				<td>row2_1</td>
+			</tr>
+			<tr>
+				<td>row1_2</td>
+				<td>row2_2</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<table width="500" height="300" border="1" cellspacing="0" cellpadding="15" align="center">
+		<caption>跨列合并</caption>
+		<thead>
+			<tr>
+				<th>one</th>
+				<th>two</th>
+				<th>three</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="3">row1</td>
+			</tr>
+			<tr>
+				<td>row1_1</td>
+				<td>row2_1</td>
+				<td>row3_1</td>
+			</tr>
+			<tr>
+				<td>row1_2</td>
+				<td>row2_2</td>
+				<td>row3_2</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
