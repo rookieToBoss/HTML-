@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>案例</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		ul {
+			list-style: none;
+		}
+		.clearfix:before, .clearfix:after {
+			display: table;
+			content: "";
+		}
+		.clearfix:after {
+			clear: both;
+		}
+		.clearfix {
+			*zoom: 1;
+		}
+		a {
+			color: #050505;
+			text-decoration: none;
+		}
+		header {
+			height: 100px;
+			background-color: purple;
+			overflow: hidden;
+		}
+		nav {
+			width: 1366px;
+			height: 42px;
+			background-color: purple;
+			margin: 30px auto 0;
+		}
+		.logo {
+			float: left;
+		}
+		.navbar {
+			float: left;
+			height: 42px;
+			line-height: 42px;
+			margin-left: 50px;
+		}
+		.navbar li {
+			float: left;
+		}
+		.navbar li a{
+			padding: 0 8px;
+			display: block;
+			height: 42px;
+		}
+		.navbar li a:hover {
+			border-bottom: 2px solid #00a4ff;
+		}
+	</style>
+</head>
+<body>
+	<!-- 页面头部分 -->
+	<header>
+		<nav>
+			<div class="logo">
+				<img src="" alt="">
+			</div>
+			<div class="navbar">
+				<ul>
+					<li><a href="">首页</a></li>
+					<li><a href="">课程</a></li>
+					<li><a href="">职业规划</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+</body>
+</html>

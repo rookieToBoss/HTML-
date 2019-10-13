@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>版心和布局流程</title>
+	<!-- 版心(可视区)是指网页中主体内容所在的区域.一般在浏览器窗口中水平居中显示,常见的宽度值为960px,980px,1000px,1200px;
+	布局流程:1.确定页面的版心;2.分析页面中的行模块,以及每个模块中的列模块;3.制作HTML结构;4.CSS初始化,然后开始运用盒子模型的原理,通过div+CSS布局来控制网页的各个模块 -->
+	<style>
+		 * {
+		 	margin: 0;
+		 	padding: 0;
+		 }
+		 .top {
+		 	width: 960;
+		 	height: 80;
+		 	background-color: pink;
+		 	margin: 0 auto;
+		 	margin-bottom: 10px;
+		 }
+		 .banner {
+		 	width: 960px;
+		 	height: 500px;
+		 	background-color: red;
+		 	margin: 0 auto;
+		 	margin-bottom: 10px;
+		 }
+		 .main {
+		 	width: 960px;
+		 	height: 120px;
+		 	background-color: purple;
+		 	margin: 0 auto;
+		 	margin-bottom: 10px;
+		 }
+		 .footer {
+		 	width: 960px;
+		 	height: 150px;
+		 	background-color: orange;
+		 	margin: 0 auto;
+		 	margin-bottom: 10px;
+		 }
+	</style>
+</head>
+<body>
+	<div class="top">top</div>
+	<div class="banner">banner</div>
+	<div class="main">main</div>
+	<div class="footer">footer</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>子元素选择器</title>
+	<!-- 子元素选择器:只能作为某元素子元素的元素.其写法就是把父级标签写在前面,子级标签写在后面,中间跟一个>进行连接,注意符号左右两侧各保留一个空格 -->
+	<style>
+		.nav li{
+			color: red;
+		}
+		.nav > li{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<ul class="nav">
+		<li>一
+			<ul>
+				<li>二</li>
+				<li>二</li>
+				<li>二</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

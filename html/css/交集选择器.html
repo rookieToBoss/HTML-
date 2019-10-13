@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>复合选择器</title>
+	<style>
+		/* 交集选择器:由两个选择器构成,其中一个为标签选择器,第二个为class选择器,两个选择器之间不能有空格*/
+		.red{
+			color: red;
+		}
+		p.red{
+			font-size: 30px;
+		}
+		div.red{
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="red">小明</div>
+	<p class="red">小红</p>
+</body>
+</html>

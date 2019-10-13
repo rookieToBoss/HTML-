@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>凹凸文字</title>
+	<style>
+		body {
+			background-color: #ccc;
+		}
+		div {
+			color: #ccc;
+			font: 700 60px "微软雅黑"
+		}
+		div:first-child {
+			text-shadow: 1px 1px 1px  #000,
+			-1px -1px 1px #FFF;
+		}
+		div:last-child {
+			text-shadow: -1px -1px 1px  #000,
+			1px 1px 1px #FFF;
+		}
+	</style>
+</head>
+<body>
+	<div>凸出文字</div>
+	<div>凹出问自己</div>
+</body>
+</html>

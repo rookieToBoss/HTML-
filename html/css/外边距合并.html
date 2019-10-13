@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>外边距合并</title>
+	<style>
+		/*相邻块元素垂直外边距的合并:当上下相邻的两个块元素相遇时,如果上面的元素有下边距margin-bottom,下面的元素有上外边距margin-top,则他们之间的垂直间距不是margin-bottom和margin-top之和而是两者中的较大者,这种现象被称为相邻块元素垂直外边距的合并(也称外边距塌陷);*/
+		div {
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+		}
+		div:first-child{
+			margin-bottom: 100px; 
+		}
+		div:last-child{
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+</body>
+</html>

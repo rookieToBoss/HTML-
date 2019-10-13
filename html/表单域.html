@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单域</title>
+</head>
+<body>
+	<!-- 在HTML中,form标签被用于定义表单域,即创建一个表单,以实现用户信息的收集和传递,form中的所有信息都会被提交给服务器;常用属性:action,method,name -->
+	<form action="" method="post" name="xxx">
+		username:
+	<input type="text" name="">
+	<br>
+	password:
+	<input type="password" name="">
+	<br>
+	<input type="button" name="" value="button">
+	<br>
+	性别:男  <!-- 如果是同一组通过name属性来实现 -->
+	<input type="radio" name="sex" value="male" checked="checked">
+	女
+	<input type="radio" name="sex" value="female">	<br>
+	爱好:
+	<input type="checkbox" name="hobby">soccer
+	<input type="checkbox" name="hobby">basketball
+	<input type="checkbox" name="hobby">baseball
+	<br>
+	<input type="submit" name="" value="submit">
+	<br>
+	<input type="reset" name="">
+	<input type="file" name="">
+	</form>
+</body>
+</html>

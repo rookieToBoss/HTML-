@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后代选择器</title>
+	<style>
+		/*后代选择器:又称包含选择器,用来选择元素或者元素组的后代,其写法就是把外层标签写在前面,内层标签写在后面,中间用空格分隔.当标签发生嵌套时,内层标签就成为外层标签的后代*/
+		div p{
+			color: blue;
+		}
+		.xxxx p{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<p>局电饭锅</p>
+	<div class="xxxx">
+		<p>打款成功</p>
+	</div>
+	<div>
+		<p>收到了科技股份 </p>
+	</div>
+</body>
+</html>

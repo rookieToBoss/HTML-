@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3盒模型</title>
+	<!-- CSS3中可以通过box-sizing来指定盒模型,即可指定为content-box,border-box,这样我们计算盒子大小的方式就发生了改变.可以分成两种情况:1.box-sizing:content-box盒子大小为width+padding+border content-box:此值为默认值,其让元素维持W3C的标准Box Mode;2.box-sizing:border-box盒子大小为width就是说padding和border是包含到width里面的;注:上面的标注的width指的是CSS属性里设置的width:length,content的值是会自动调整的 -->
+	<style>
+		div:first-child {
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			box-sizing: content-box;
+			padding: 10px;
+			border: 15px solid red;
+		}
+		div:last-child {
+			width: 200px;
+			height: 200px;
+			background-color: purple;
+			box-sizing: border-box;
+			padding: 10px;
+			border: 15px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div>conten-box</div>
+	<div>border-box</div>
+</body>
+</html>

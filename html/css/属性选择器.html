@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>属性选择器</title>
+	<style>
+		a[title]{
+			/*属性选择器用中括号表示*/
+			/*E[attr]:存在attr属性即可;E[attr=val]属性值完全等于val;E[attr*=val]属性值里包含val字符并且在任意位置;E[attr^=val]属性值里包含val字符并且在开始位置;E[attr$=val]属性值里包含val字符并且在结束位置*/
+			color: red;
+		}
+		input[type=text]{
+			color: red;
+		}
+		div[class^=font]{
+			color: red;
+		}
+		div[class$=footer]{
+			color: green;
+		}
+		div[class*=tao]{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<a href="#" title="baidu">百度</a>
+	<a href="#" title="sina">新浪</a>
+	<a href="#" >搜狐</a>
+	<a href="#" >网易</a>
+	<a href="#" >优酷</a>
+	<input type="text" value="xxxxx">
+	<input type="text" value="zzzzzz">
+	<input type="submit">
+	<input type="submit">
+	<input type="reset">
+	<input type="reset">
+	<div class="font12">属性选择器</div>
+	<div class="font12">属性选择器</div>
+	<div class="font24">属性选择器</div>
+	<div class="font24">属性选择器</div>
+	<div class="font24">属性选择器</div>
+	<div class="sub-footer">属性选择器</div>
+	<div class="jd-footer">属性选择器</div>
+	<div class="news-tao-nav">属性选择器</div>
+	<div class="news-tao-header">属性选择器</div>
+</body>
+</html>
