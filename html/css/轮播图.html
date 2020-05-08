@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.slider {
+			width: 450px;
+			height: 300px;
+			background-color: pink;
+			margin: 50px auto;
+			position: relative;
+		}
+		.arrow-l,
+		.arrow-r {
+			position: absolute;
+			width: 24px;
+			height: 36px;
+			display: block;
+		}
+		.arrow-l {
+			left: 0;
+			top: 50%;
+			margin-top: -18px;
+		}
+		.arrow-r {
+			right: 0;
+			top: 50%;
+			margin-top: -18px;
+		}
+		ul {
+			list-style: none;
+		}
+		.circle {
+			width: 65px;
+			height: 13px;
+			background-color: rgba(0,0,0,0.2);
+			position: absolute;
+			bottom: 15px;
+			left: 50%;
+			margin-left: -32px;
+		}
+		.circle li {
+			width: 9px;
+			height: 9px;
+			background-color: #B7B7B7;
+			float: left;
+			margin: 2px;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div class="slider">
+		<img src="images/image2.jpg" alt="">
+		<a href="#" class="arrow-l"><img src="images/left.png" alt=""></a>
+		<a href="#" class="arrow-r"><img src="images/right.png" alt=""></a>
+		<ul class="circle">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>

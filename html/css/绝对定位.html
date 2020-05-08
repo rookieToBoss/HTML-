@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位</title>
+	<style>
+		div:first-child {
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			position: absolute;
+			top: 20px;
+			left: 20px;
+		}
+		div:last-child {
+			width: 200px;
+			height: 150px;
+			background-color: purple;
+		}
+	</style>
+</head>
+<body>
+	<!-- 注意如果文档可以滚动,绝对定位元素会随着他滚动,因为元素最终会相对于正常流的某一部分定位.当position属性值得取值为absolute时,可以将元素的定位模式设置为绝对定位.注意:绝对定位最重要的一点是,它可以通过边偏移移动位置,但是它完全脱标,完全不占位置 -->
+	<div></div>
+	<div></div>
+</body>
+</html>

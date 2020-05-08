@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,
+        p {
+            width: 300px;
+            height: 30px;
+            line-height: 30px;
+            color: #fff;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 改变元素内容 -->
+    <button>显示当前时间</button>
+    <div>某个时间</div>
+    <p>123</p>
+    <script>
+        // 点击按钮div里面文字发生变化
+        // innerText 从起始位置到终止位置的内容,但它去除HTML标签,同时空格和换行也会去掉
+        // innerHtml 起始位置到终止位置的全部内容,包括HTML标签,同时保留空格和换行
+        //这两个标签是可读写的
+        var btn = document.querySelector('button');
+        var div = document.querySelector('div');
+        btn.onclick = function(){
+            var date = new Date();
+            div.innerText = date;
+        }
+        var p = document.querySelector('p');
+        p.innerText = '2020.3.31';
+        p.innerHTML = '<strong>214</strong>:2345';
+    </script>
+</body>
+</html>

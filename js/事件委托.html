@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 事件委托原理 不是每个子节点单独设置事件监听器,而是事件监听器设置在其父节点,然后利用冒泡原理影响设置每个子节点 -->
+    <ul>
+        <li>xxxxxxxxxxxx</li>
+        <li>xxxxxxxxxxxx</li>
+        <li>xxxxxxxxxxxx</li>
+        <li>xxxxxxxxxxxx</li>
+        <li>xxxxxxxxxxxx</li>
+    </ul>
+    <script>
+        // 
+        var ul = document.querySelector('ul');
+        ul.addEventListener('click', function(e){
+            alert('xxxxx');
+            e.target.style.backgroundColor = 'red';
+        });
+    </script>
+</body>
+</html>

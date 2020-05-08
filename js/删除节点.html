@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>delete</button>
+    <ul>
+        <li>1</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <script>
+        var ul = document.querySelector('ul');
+        var btn = document.querySelector('button');
+        btn.onclick = function(){
+            //删除节点
+            ul.removeChild(ul.children[0]);
+        }
+    </script>
+</body>
+</html>

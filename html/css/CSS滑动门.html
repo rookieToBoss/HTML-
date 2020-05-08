@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>滑动门</title>
+	<!-- 核心技术:利用CSS精灵(主要是背景位置)和盒子padding撑开宽度,以便能适应不同字数的导航栏.一般的经典布局都是这样的:
+		<li>
+			<a href='#''>
+				<span>导航栏内容</span>
+			</a>
+		</li>
+	总结:1.a设置背景左侧,padding撑开合适宽度.2.span设置背景右侧,padding撑开合适宽度剩下由文字继续撑开宽度.3.之所以a包含span就是因为整个导航都是可以点击的. -->
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		a {
+			display: inline-block;
+			height: 33px;
+			background: url(images/ao.png) no-repeat;
+			padding-left: 15px;
+			text-decoration: none;
+			line-height: 33px;
+		}
+		a span {
+			display: inline-block;
+			height: 33px;
+			background: url(images/ao.png) no-repeat right;
+			padding-right: 15px;
+
+		}
+	</style>
+</head>
+<body>
+	<a href="#">
+		<span>首页</span>
+	</a>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>相对定位</title>
+	<style>
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+		}
+		div:nth-child(2) {
+			background-color: purple;
+			position: relative;
+			left: 100px;
+			top: 110px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 相对定位是将元素相对于它在标准流中的位置进行定位,当position属性的取值为relative是,可以将元素定位于相对位置.
+	对元素设置相对定位后,可以通过边偏移属性改变元素的位置,但是它在文档流中的位置仍然保留.注意:相对定位最重要的一点是它可以通过边偏移移动位置,但是原来的所占的位置继续占有.其次每次移动的位置是以自己的左上角为基点移动;就是说相对定位的盒子仍在标准流中,它后面的盒子仍以标准流方式对待它.如果说浮动的主要目的是让多个块级元素一行显示,那么定位的主要价值就是移动位置,让盒子到我们想要的位置上去. -->
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS 动画</title>
+	<style>
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			animation: go 5s ease 0s 2 reverse;
+			/*动画名称是自定义的*/
+		}
+		/*@keyframes go {
+			from {
+				transform: translateX(0);
+			}
+			to {
+				transform: translateX(600px);
+			}
+		}*/
+		@keyframes go {
+			0%  {
+				transform: translate3d(0,0,0);
+			}
+			25% {
+				transform: translate3d(800px,0,0);
+			}
+			50% {
+				transform: translate3d(800px, 400px, 0);
+			}
+			75% {
+				transform: translate3d(0, 400px, 0);
+			}
+			100% {
+				transform: translate3d(0,0,0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- 语法格式:animation:动画名称 动画时间 运动曲线 何时开始 播放次数 是否反方向 
+		关于几个值,除了名字,动画时间,延时有严格顺序要求其他随意
+		@keyframe  动画名称 {
+			from{开始位置}
+			to{结束位置}
+		}
+	animation-iteration-count:infinite;虚线循环播放
+	animation-play-state:pause;暂停动画-->
+	<div></div>
+</body>
+</html>

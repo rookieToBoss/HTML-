@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伸缩布局</title>
+	<style>
+		section {
+			width: 80%;
+			height: 200px;
+			border: 1px solid red;
+			margin: 100px auto;
+			display: flex;/*父级盒子添加flex*/
+			/*min-width: 200px;*/
+			/*flex-direction: column;排列方式*/
+			/*justify-content: flex-end; 调整主轴对齐*/
+			/*align-items: flex-start; 垂直对齐*/
+			/*flex-wrap: wrap;控制是否换行*/
+			/*align-content: flex-start;堆栈(由flex-wrap产生的独立行)对齐;align-content是针对flex容器里面多轴(行)的情况,align-item是针对一行的情况进行排列.必须对父元素设置自由盒属性display:flex;并且设置排列方式为横向排列flex-direction:row;并且设置换行,flex-wrap:warp;这样这个属性的设置才会起作用.*/
+			/*flex-flow: 是flex-direction flex-wrap的简写形式*/
+			/*order: 控制字项目的排列顺序,正序方式排列,从小到大,用整数来定义排列顺序,数值小的在前面*/
+		}
+		section div {
+			height: 100%;
+			flex: 1; /*子盒子添加份数*/
+		}
+	</style>
+</head>
+<body>
+	<!-- 主轴:flex容器的主轴主要用来配置flex项目,默认是水平方向 
+	侧轴:与主轴垂直的轴称为侧轴,默认是垂直方向的.
+	方向:默认主轴从左向右,侧轴默认从上到下
+	主轴和侧轴并不是固定不变的,通过flex-direction可以互换 -->
+	<img src="images/flex.png" alt="">
+	<section>
+		<div style="background-color: red">1</div>
+		<div>2</div>
+		<div style="background-color: pink">3</div>
+	</section>
+</body>
+</html>

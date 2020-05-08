@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS精灵技术</title>
+	<style>
+		div {
+			width: 17px;
+			height: 13px;
+			background: url(images/jd.png) no-repeat;
+			background-position: 0 -388px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 当用户访问一个网站时,需要向服务器发送请求,网页上的每张图像都要经过一次请求才能展现给用户.然而,一个网页中往往会应用很多小的背景图像作为修饰,当网页中的图像过多时,服务器就会频繁地接受和发送请求,这将大大降低页面的加载速度.为了有效减少服务器接受和发送请求的次数,提高页面的加载速度,出现了CSS精灵技术(也称CSS sprites,CSS雪碧) 
+	精灵技术本质
+	简单的说,CSS精灵技术是一种处理网页背景图像的方式.它将一个页面涉及到的所有零星背景图像都集中到一张大图中去,然后将大图应用于网页,这样,当用户访问该页面时,只需向服务发送一次请求,网页中的背景图像即可全部显示出来.通常情况下,这个由很多小的背景图像合成的大图被称作精灵
+	精灵技术的使用
+	CSS精灵其实是将网页中的一些背景图像整合到一张大图中,然鹅,各个网页元素通常只需要精灵图中不同位置的某个小图,要想精确定位到精灵图中的某个小图,就需要使用CSS的background-image,background-repeat和background-position属性进行背景定位,其中最关键的是使用background-position属性精确的定位.
+	-->
+		<div></div>
+</body>
+</html>

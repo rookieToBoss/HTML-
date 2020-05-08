@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>固定定位</title>
+	<style>
+		body {
+			height: 3000px;
+		}
+		.father {
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			margin: 100px auto; 
+			position: relative;
+		}
+		img {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<!-- 固定定位是绝对定位的一种特殊形式.它以浏览器窗口作为参照物来定义网页元素.当position属性的取值为fixed即可将元素的定位模式设置为固定定位.
+	当元素设置固定定位后,它将脱离标准文档流的控制,始终依据浏览器窗口来定义自己的显示位置.不管浏览器滚动条如何滚动也不管浏览器窗口的大小如何变化,该元素都会始终显示在浏览器窗口的固定位置.
+	固定定位有两点:1.固定定位的元素跟父亲没有任何关系,只认浏览器.2.固定定位完全脱标,不占有位置,不随着 滚动条滚动. -->
+	<div class="father">
+		<img src="images/image2.jpg" alt="">
+	</div>
+</body>
+</html>
