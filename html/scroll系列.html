@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        // 元素scroll系列属性,我们使用scroll系列的相关属性可以动态的得到该元素的大小,滚动军力等
+        //element.scrollTop返回被卷上去的上侧距离,返回值不带单位; .scrollLeft
+        //element.scrollWidth返回自身实际的宽度,不含边框,返回数值不带单位; .scrollHeight
+        var div  = document.querySelector('div');
+        console.log(div.scrollHeight);
+    </script>
+</body>
+</html>

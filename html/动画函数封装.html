@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        //给不同元素记录不同定时器
+
+        function animate(obj, target) {
+            //让元素只有一个定时器执行
+            clearInterval(obj.timer);
+            obj.timer = setInterval(function(){
+            if (obj.offsetLeft >= target) {
+                clearInterval(obj.timer);
+            }
+                obj.style.left = obj.offsetLeft + 1 + 'px';
+            },100);
+        }
+        var div = document.querySelector('div');
+        animate(div, 300);
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .father {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(216, 132, 22);
+            margin: 100px;
+        }
+        .w {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            margin: 0 auto 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <div class="w"></div>
+    <script>
+        //offset便宜量,我们使用offset系列相关属性可以动态的得到元素的位置,大小等
+        //获得元素距离带有定位父元素的位置
+        //获得元素自身的大小 注意返回的数值都不带单位
+        //offset系列常用属性 offsetParent返回带有定位的父亲否则返回的是body offsetTop offsetLeft offsetWidth offsetHeight
+        var father = document.querySelector('.father');
+        console.log(father.offsetTop);
+        //可以得到元素的大小宽度和高度 是包含padding + border + width
+        var w = document.querySelector('.w');
+        console.log(w.offsetWidth);
+        console.log(w.offsetHeight);
+    </script>
+</body>
+</html>
