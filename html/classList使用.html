@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one"></div>
+    <script>
+        // classList属性是HTML5新增的一个属性,返回元素的类名.
+        var div = document.querySelector('div');
+        console.log(div.classList);
+        //添加类名
+        div.classList.add('two');
+        div.classList.remove('one');
+        div.classList.toggle('three');//切换类
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localstorage</title>
+</head>
+<body>
+    <input type="text" name="" id="">
+    <button class="set">存储数据</button>
+    <button class="get">获取数据</button>
+    <button class="remove">删除数据</button>
+    <button class="del">清除数据</button>
+    <script>
+        // window.localStorage
+        //生命周期永久生效,除非手动删除否则关闭页面也会存在;2.可以多窗口共享(同一浏览器可以共享);3.以键值对的形式存储使用
+        var input = document.querySelector('input');
+        var set = document.querySelector('.set');
+        var get = document.querySelector('.get');
+        var remove = document.querySelector('.remove');
+        var del = document.querySelector('.del');
+        set.addEventListener('click',function(){
+            var val = input.value;
+            localStorage.setItem('uname',val);
+        });
+        get.addEventListener('click', function(){
+            localStorage.getItem('uname');
+        });
+        remove.addEventListener('click', function(){
+            localStorage.removeItem('uname');
+        });
+        del.addEventListener('click', function(){
+            localStorage.clear();
+        });
+    </script>
+</body>
+</html>
