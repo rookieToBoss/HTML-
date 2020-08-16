@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //冒泡
+        var arr = [3,2,5,1,6,7];
+        for (var i = 0; i < arr.length - 1; i++){
+            for (var j = 0; i < arr.length - i - 1; j++){
+                if (arr[j] > arr[j + 1]) {
+                    var temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        //只有函数才有argument对象,而且是每个函数都内置了这个arguments
+        function fn() {
+            //伪数组 并不是真正意义上的数组 
+            //具有数组的length属性
+            //按照索引的方式进行存储的
+            //它并没有真正数组的一些方法
+            console.log(arguments);
+            for (var i = 0; i < arguments.length;i++){
+                console.log(arguments[i]);
+            }
+        }
+        //1.js引擎运行js分为两步:预解析 代码执行
+        // (1).预解析 js引擎会把js里面所有的var还有function提升到当前作用域的最前面
+        // (2).代码执行 按照代码书写顺序从上往下执行
+        //2.预解析分为 变量预解析(变量提升)和函数预解析(函数提升)
+        // (1).变量提升 就是把所有变量声明提升到当前的作用域最前面 不提升赋值操作
+        // (2).函数提升 就是把函数声明提升到当前作用域的最前面
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

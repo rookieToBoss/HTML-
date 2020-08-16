@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>透视</title>
+	<style>
+		body {
+			perspective: 500px;
+		}
+		img {
+			margin: 100px;
+			transition: all 2s;
+			transform-origin: right;
+		}
+		img:hover {
+			transform: rotateX(180deg);
+		}
+	</style>
+</head>
+<body>
+	<!-- 电脑显示屏是一个2d平面,图像之所以具有立体感,其实是一种视觉呈现,通过透视可以实现此目的.
+	透视可以将一个2d平面,在转换的过程中,呈现3d效果;透视原理:近大远小;perspective:视距,表示视点距离屏幕的长短,视点,用于模拟透视效果时人眼的位置;perspective一般作为一个属性,设置给父元素,作用于所有3d转换的子元素 -->
+	<img src="images/image2.jpg" alt="">
+</body>
+</html>

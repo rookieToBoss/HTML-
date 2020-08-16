@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        // element.style 行内样式操作;element.className 类名样式操作
+        var div = document.querySelector('div');
+        div.onclick = function(){
+            this.style.backgroundColor = 'red';
+        }
+    </script>
+</body>
+</html>

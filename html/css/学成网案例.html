@@ -25,9 +25,19 @@
 			color: #050505;
 			text-decoration: none;
 		}
+		input {
+			border: 0;
+			box-sizing: border-box;
+		}
+		.container {
+			width: 1200px;
+			margin: 0 auto;
+		}
+		body {
+			background-color: #f3f5f7;
+		}
 		header {
 			height: 100px;
-			background-color: purple;
 			overflow: hidden;
 		}
 		nav {
@@ -56,6 +66,92 @@
 		.navbar li a:hover {
 			border-bottom: 2px solid #00a4ff;
 		}
+		.search {
+			width: 410px;
+			height: 38px;
+			border: 1px solid #00a4ff;
+			float: left;
+		}
+		.search input[type=text] {
+			background-color: pink;
+			width: 360px;
+			height: 38px;
+			padding-left: 20px;
+			float: left;
+		}
+		.search input[type=submit] {
+			width: 50px;
+			height: 38px;
+			float: left;
+			background: #00a4ff url() center no-repeat;
+		}
+		.personal {
+			float: right;
+			height: 42px;
+			line-height: 42px;
+			margin-right: 15px;
+		}
+		.personal img {
+			margin: 0 8px;
+		}
+		.banner {
+			height: 420px;
+			background-color: #1c036c;
+		}
+		.banner-in {
+			height: 420px;
+			background :url() 0 0 no-repeat;
+		}
+		.sliderbar {
+			height: 420px;
+			width: 190px;
+			background: rgba(0,0,0,0.4);
+			float: left;
+		}
+		.sliderbar li a {
+			color: #fff;
+			font-size: 14px;
+			padding: 0 20px;
+			display: block;
+			height: 45px;
+			line-height: 45px;
+		}
+		.timetable {
+			float: right;
+			width: 230px;
+			height: 300px;
+			background-color: #fff;
+			margin-bottom: 50px;
+		}
+		.timetable dt {
+			height: 50px;
+			line-height: 50px;
+			background-color: #9bceea;
+			text-align: center;
+			color: #fff;
+			font-weight: 700;
+			letter-spacing: 2px;
+			margin-bottom: 5px;
+		}
+		.timetable dd {
+			width: 193px;
+			height: 60px;
+			background-color: purple;
+			margin: 0 auto;
+			border-bottom: 1px solid #ccc;
+			padding-top: 12px;
+			box-sizing: border-box;
+		}
+		.timetable dd h4 {
+			font-size: 16px;
+			font-weight: normal;
+			color: #4e4e4e;
+		}
+		.timetable dd p {
+			font-size: 14px;
+			font-weight: normal;
+			color: #a5a5a5;
+		}
 	</style>
 </head>
 <body>
@@ -72,7 +168,44 @@
 					<li><a href="">职业规划</a></li>
 				</ul>
 			</div>
+			<!-- 搜索框部分 -->
+			<div class="search">
+				<input type="text" name="" placeholder="情输入关键字">
+				<input type="submit">
+			</div>
+			<!-- 个人中心 -->
+			<div class="personal">
+				<a href="">个人中心<img src="" alt=""></a>
+				<a href=""></a>
+			</div>
 		</nav>
 	</header>
+	<!-- banner部分 -->
+	<div class="banner">
+		<div class="banner-in container">
+			<!-- 左侧导航栏 -->
+			<div class="sliderbar">
+				<ul>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
+			<dl>
+				<dt class="timetable">
+					<dd>我的课表</dd>
+					<dd><h4>继续学习 程序语言设计</h4><p>正在学习使用对象</p></dd>
+					<dd><h4>继续学习 程序语言设计</h4><p>正在学习使用对象</p></dd>
+					<dd><h4>继续学习 程序语言设计</h4><p>正在学习使用对象</p></dd>
+				</dt>
+			</dl>
+		</div>
+	</div>
 </body>
 </html>

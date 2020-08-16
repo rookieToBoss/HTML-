@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var obj = {
+            name:"zs",
+            age:13,
+            sex:"nan",
+            sayHi: function(){
+                console.log("hi");
+            }
+        }
+        // 构造函数创建对象
+        function Person(uname, age, sex) {
+            // 构造函数的名字首字母大写
+            // 构造函数不需要return
+            // 调用构造函数必须使用new
+            //只要new function()调用函数就创建一个对象
+            //属性和方法的前面必须使用this
+            this.uname = uname;
+            this.age = age;
+            this.sex = sex;
+        }
+        //遍历对象
+        for (const key in obj) {
+            console.log(key);
+            console.log(obj[key]);
+        }
+        var person = new Person("ldh", 32, "male");
+        //JavaScript中的对象分为3种,自定义对象,内置对象,浏览器对象
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

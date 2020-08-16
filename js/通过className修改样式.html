@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+        }
+        .change {
+            margin-top: 100px;
+            background-color: purple;
+            color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <div>xxxxxx</div>
+    <script>
+        var test = document.querySelector('div');
+        test.onclick = function(){
+            //className 会直接更改元素的类名,会覆盖原先的类名
+            this.className = 'change';
+            // 如果想要保留原先的类名  this.className = 'first change'
+               
+        }
+    </script>
+</body>
+</html>

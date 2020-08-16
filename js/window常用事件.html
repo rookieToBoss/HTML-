@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 窗口加载事件,当文档内容完全加载完成会触发该事件(包括图像脚本文件CSS等)
+        // window.onload = function(){
+
+        // }
+        window.addEventListener('load', function(){
+            alert('22');
+        })
+        // 窗口加载事件 DOMContentLoaded事件触发时,仅当DOM加载完成,不包括样式表,
+        // 图片,flash等.IE9以前支持.如果页面图片很多,从用户访问到onload触发可能需要
+        // 较长的时间,交互效果不能实现,必然影响用户体验,此时用DOMContenntLoaded事件比较合适
+        document.addEventListener('DOMContentLoaded', function(){
+            alert('33');
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪元素本质</title>
+	<style>
+		div ::before {
+			content: "wo";
+			background-color: pink;
+			/*类选择器伪类选择器就是选取对象;伪元素选择器本质上是插入一个元素(标签 盒子)只不过是行内元素*/
+		}
+		div ::after {
+			content: "????";
+			display: block;
+			width: 40px;
+			height: 40px;
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<!-- before和after
+	之所以被称为伪元素,是因为他们不是真正的页面元素,HTML没有对应的元素,但是其所有用法和表现行为与真正的页面元素一样,可以对其使用诸如页面元素一样的CSS样式,表面上看上去貌似是页面的某些元素来展现,实际上是CSS样式展现的行为,因此被称为伪元素.是伪元素在HTML代码机构中的展现,可以看出无法伪元素的结构无法审查
+	注意:伪元素before和after添加的内容默认是inline元素**;这两个伪元素的content属性表示伪元素的内容,设置:before和:after时必须设置其content属性,否则伪元素就不起作用;伪元素是不占位置的 -->
+	<div>是你爸爸</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>静态定位</title>
+	<style>
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			top: 100px;
+			left: 100px;
+			position: static;/*静态定位对于边偏移无效的;一般它用来清除定位的*/
+		}
+	</style>
+</head>
+<body>
+	<!-- 静态定位是所有元素默认定位方式,当position属性为static可以将元素定位于静态位置.所谓静态位置就是各个元素在HTML文档中默认的位置.在静态定位状态下无法通过边偏移属性(top,left等)来改变元素的位置 -->
+	<div></div>
+</body>
+</html>

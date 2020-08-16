@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // keyup键盘弹起时触发;keydown键盘按下时触发;keypress键盘被按下时触发,
+        // 但它不是功能键ctrl,shift等;三个事件的执行顺序keydown->keypress->keyup
+        document.onkeyup  = function(){
+            console.log("keyup");
+        };
+        document.addEventListener('keydown', function(){
+            console.log("keydown");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位盒子的模式转换</title>
+	<style>
+		div {
+			height: 100px;
+			background-color: pink;
+			/*position: fixed;		*/
+		}
+		span {
+			background-color: purple;
+			/*float: left;*/
+			position: absolute;
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 跟浮动一样,元素添加了绝对定位和固定定位之后,元素模式也会发生转换,都转换为行内块元素,因此比如行内元素 如果添加了绝对定位或者固定定位后,可以不用转换模式,直接给高度和宽度就可以了 -->
+	<div>我是你爸爸</div>
+	<span>行内块元素</span>
+</body>
+</html>

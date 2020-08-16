@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 注册事件:给元素添加时间,称为注册事件或者绑定事件.注册事件有两种方式:传统方式和方法监听注册方式-->
+    <!-- 传统注册方式 利用on开头的事件onClick 特点:注册事件的唯一性.同一个元素同一个事件只能设置 一个处理函数,最后注册的处理
+    函数将会覆盖前面注册的处理函数 -->
+    <!-- 方法监听注册方式 w3c标准 推荐方式.addEventListener()它是一个方法.IE9之前不支持,可使用attachEvent代替.注册顺序依次执行-->
+    <button>
+        传统注册
+    </button>
+    <button>方法监听注册</button>
+    <script>
+        var btn = document.querySelectorAll('button');
+        //传统方式
+        btn[0].onclick = function(){
+            alert('helelo');
+        }
+        btn[0].onclick = function(){
+            alert('hahaha');
+        }
+        // addEventListener(type,listener,useCapture)事件类型是字符串,必定加引号,而且不带on.同一个元素同一个事件可以添加多个侦听器
+        btn[1].addEventListener('click', function(){
+            alert('222');
+        })
+    </script>
+</body>
+</html> 

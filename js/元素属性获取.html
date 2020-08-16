@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo" index = "2" class="nav"></div>
+    <script>
+        // 获取元素的属性值
+        var div = document.querySelector('div');
+        // element.属性
+        console.log(div.id);
+        //element.getAttribute(属性)
+        // 区别 element.属性 获取内置属性值(元素本身自带的属性) 
+        // element.getAttribute('属性'); 主要获得自定义属性,程序员自定义的属性
+        div.getAttribute('id')
+        //设置属性值
+        div.id = 'test';
+        div.setAttribute('id','test2');
+        //移除属性
+        div.removeAttribute('index');
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- 文档对象模型(Document Object Model,简称DOM)是w3c组织推荐的处理可扩展标记语言的标准编程接口 -->
+    <!-- DOM树 -->
+    <div id="time">2020.10.10</div>
+    <ol id="ol" class="box">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <script>
+        var timer = document.getElementById('time');
+        
+        console.dir(timer);
+        // 根据标签名获取元素
+        document.getElementsByTagName('div');
+        //获取父元素内部所有指定标签的子元素
+        var ol = document.getElementById('ol');
+        ol.getElementsByTagName('li');
+        //t通过HTML5新增方法获得
+        document.getElementsByClassName('box');
+        document.querySelector('.box');//返回指定选择器的第一个元素对象
+        document.querySelectorAll('.box');//返回指定选择器的所有元素对象集合
+    </script>
+</body>
+</html>

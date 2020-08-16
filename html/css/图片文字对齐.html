@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片与文字对齐</title>
+	<style>
+		div {
+			width: 200px;
+			height: 100px;
+			background-color: pink;
+			margin-left: auto;
+			margin-right: auto;/*左右自动auto盒子可以居中对齐*/
+			text-align: center;
+		}
+		img {
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<div>文字居中</div>
+	<hr>
+	<!-- vertical-align垂直对齐
+	以前让带有宽度的块级元素居中对齐,是margin:0 auto;让文字居中对齐是text-align:center;
+	vertical-align:baseline | top | middle | bottom
+	设置或检索对象内容的垂直对齐方式.
+	vertical-align不影响块级元素中的内容对齐,它只针对行内元素或者行内块元素,特别是行内块元素,通常用来控制图片和表单与文字的对齐 -->
+	<!-- 去除图片底侧空白缝隙
+	有个很重要的特性:图片或者表单等行内快元素,它的底线会和父级盒子的基线对齐.这样会造成一个问题就是图片底侧会有一个空白缝隙.解决办法就是:1.给img vertical-align:middle | top等等.让图片不要和基线对齐.2.给img添加display:block;转换为块级元素就不会存在问题了. -->
+	<img src="images/duiqi.png" alt="">
+	图片和文字默认是基线对齐
+</body>
+</html>

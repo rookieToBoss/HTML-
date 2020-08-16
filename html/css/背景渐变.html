@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景渐变</title>
+	<style>
+		div {
+			width: 300px;
+			height: 50px;
+			/*语法格式:background-color: -webkit-linear-gradient(渐变的起始位置, 起始颜色, 结束颜色)*/
+			background-color: -webkit-linear-gradient(top, red, green);
+			margin: 200px auto;
+		}
+		section {
+			width: 300px;
+			height: 50px;
+			/*语法格式:background-color: -webkit-linear-gradient(渐变的起始位置, 颜色 位置, 颜色位置...)*/
+			background-color: -webkit-linear-gradient(top, red 0%, green 20%, blue 80%);
+			margin: 200px auto;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<section></section>
+	<!-- CSS W3C统一验证工具
+	网址:www.cssstats.com    validator.w3.org/unicorn -->
+	<!-- CSS压缩
+	为了提高加载速度和节约空间,可以通过CSS压缩工具把CSS进行压缩
+	tool.chinaz.com/Tools/CssFormat.aspx   tool.chinaz.com/Tools/CssFormat.aspx -->
+</body>
+</html>
